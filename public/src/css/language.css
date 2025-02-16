@@ -1,0 +1,60 @@
+:lang(en) {
+  --header-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --accent-font: "Lato", sans-serif;
+}
+
+/* Arabic Content - start */
+
+:lang(ar) {
+  --header-font: "El Messiri", sans-serif;
+  --body-font: "Tajawal", sans-serif;
+  --accent-font: "Tajawal", sans-serif;
+}
+
+*:lang(ar) {
+  letter-spacing: 0 !important;
+}
+
+#logo:lang(ar) {
+  margin-right: 0;
+}
+
+#dropdown-container:lang(ar) {
+  right: calc(97% - 200px);
+}
+
+#arrow:lang(ar) {
+  margin-right: 160px;
+}
+
+#search-bar input:lang(ar) {
+  margin-right: 8px;
+}
+
+#search-result table:lang(ar) {
+  text-align: right;
+}
+
+#search-result td + td:lang(ar) {
+  margin-right: 1vw;
+}
+
+#reach-container > h3:lang(ar),
+#reach-container > p:lang(ar) {
+  justify-self: right;
+}
+
+#search-bar div + #search-icon:lang(ar) {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 2vw;
+}
+
+@media all and (width <= 700px) {
+  #search-icon:lang(ar) {
+    padding-right: 0;
+  }
+}
+
+/* end - Arabic Content */

@@ -1,0 +1,123 @@
+/* main containers - start h p call-to-action */
+
+.container {
+  display: grid;
+  grid-template-columns: 6vw 1fr 6vw;
+  grid-template-rows: minmax(6vh, 1fr) repeat(3, max-content) 6vh;
+  grid-template-areas:
+    ". . ."
+    ". h ."
+    ". p ."
+    ". b ."
+    ". . .";
+  place-items: center center;
+  width: 100%;
+  height: 768px;
+  background: url("https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937611/images/photo-1_popw37.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.container h1,
+.container h2 {
+  grid-area: h;
+  width: fit-content;
+  max-width: 80vw;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: var(--primary-color-transparent);
+  font-family: var(--header-font);
+  font-size: var(--header-font-size);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.container p {
+  grid-area: p;
+  width: fit-content;
+  max-width: 650px;
+  padding: 5px;
+  background-color: var(--primary-color-transparent);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  line-height: 1.5rem;
+}
+
+.call-to-action {
+  grid-area: b;
+  display: inline-block;
+  margin: 30px 0 20px 20px;
+}
+
+.call-to-action a,
+#search-result button {
+  padding: 12px;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+  background-color: var(--primary-color-transparent);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+}
+
+.call-to-action a:hover,
+.call-to-action a:focus,
+#search-result button:hover,
+#search-result button:focus {
+  padding: 12px 20px;
+  border: 2px dashed var(--accent-color);
+}
+
+#up-button {
+  display: inline-block;
+  position: sticky;
+  top: 50%;
+}
+
+#up-button img {
+  height: auto;
+  width: 40px;
+  max-width: 5vw;
+  margin: 1vw;
+  margin-bottom: 0;
+}
+
+.plain-container {
+  grid-template-rows: repeat(3, max-content) 6vh;
+  grid-template-areas:
+    ". h ."
+    ". p ."
+    ". b ."
+    ". . .";
+  height: auto;
+  color: var(--complementary-contrast-color);
+  background: none;
+}
+
+.plain-container,
+.plain-container h1,
+.plain-container h2,
+.plain-container p {
+  background: none;
+}
+
+div .container:nth-of-type(2) {
+  background: url("https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937612/images/photo-2_wa1tez.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container:nth-of-type(3) {
+  grid-template-rows: minmax(6vh, 1fr) repeat(3, max-content) 6vh;
+  grid-template-areas:
+    ". . ."
+    ". h ."
+    ". p ."
+    ". b ."
+    ". . .";
+  background: none;
+}
+
+/* end - main containers */

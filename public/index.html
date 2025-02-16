@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-txt="title">Lake Park Resort</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938355/icons/favicon_a4dxtr.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/language.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/book.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/explore.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/reach.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=El+Messiri:wght@400..700&family=Tajawal:wght@400;700&family=Lateef&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header-wrapper">
+      <div class="bar" id="header">
+        <img
+          id="logo"
+          alt="the logo of lake park resort"
+          src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937608/images/logo_egdh3w.png"
+        />
+        <nav>
+          <ul class="nav-menu">
+            <li class="button current">
+              <a href="#home" data-txt="home">Home</a>
+            </li>
+            <li class="button"><a href="#book" data-txt="book">Book</a></li>
+            <li class="button">
+              <a href="#explore" data-txt="explore">Explore</a>
+            </li>
+            <li class="button"><a href="#reach" data-txt="reach">Reach</a></li>
+          </ul>
+        </nav>
+        <div id="display-language">
+          <ul>
+            <li class="button current"><a href="#" lang="en">En</a></li>
+            <li class="button">
+              <a lang="ar" href="#">عربي</a>
+            </li>
+          </ul>
+        </div>
+        <div id="hamburger-button" title="open the navigation menu">
+          <img
+            alt="hamburger button icon"
+            src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937780/icons/header/menu_d1ub2e.png"
+          />
+        </div>
+        <div id="close-button" title="close">
+          <img
+            alt="close button icon"
+            src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937779/icons/header/close_p06cs8.png"
+          />
+        </div>
+      </div>
+      <nav id="dropdown-container">
+        <div id="arrow"></div>
+        <ul id="dropdown-nav">
+          <li class="button current">
+            <a href="#home" data-txt="home">Home</a>
+          </li>
+          <li class="button"><a href="#book" data-txt="book">Book</a></li>
+          <li class="button">
+            <a href="#explore" data-txt="explore">Explore</a>
+          </li>
+          <li class="button"><a href="#reach" data-txt="reach">Reach</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="overlay"></div>
+    <main>
+      <div id="home">
+        <section id="first-container" class="container">
+          <h1 data-txt="home0c10h">Welcome to Lake Park Resort</h1>
+          <p data-txt="home0c10p">
+            Immerse yourself in the tranquility of nature at one of our villas,
+            nestled in the heart of Sapanca, Sakarya.
+          </p>
+          <div class="button call-to-action">
+            <a href="#book" data-txt="home0c10b">Book Now</a>
+          </div>
+        </section>
+      </div>
+      <div id="up-button">
+        <a href="#first-container"
+          ><img
+            alt="up button icon"
+            src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938277/icons/up-arrow_j9n5w0.png"
+        /></a>
+      </div>
+      <!--2nd part of home - separated to allow the up-button without more js -->
+      <div id="home-rest">
+        <section class="container plain-container">
+          <h2 data-txt="home0c20h">Luxury Accommodations</h2>
+          <p data-txt="home0c20p">
+            Our resort offers a unique blend of serenity, comfort, and luxury,
+            making it a perfect getaway for those seeking a retreat from the
+            hustle and bustle of city life. <br />
+            Our accommodations are designed with your comfort in mind. Each room
+            offers a panoramic view of the lake, ensuring that you wake up to
+            the sight of sparkling waters every morning. With modern amenities
+            and luxurious furnishings, we guarantee a stay that is as
+            comfortable as it is memorable.
+          </p>
+          <div class="button call-to-action">
+            <a href="#explore" data-txt="home0c20b">Discover Stay</a>
+          </div>
+        </section>
+        <section class="container">
+          <h2 data-txt="home0c30h">Unparalleled Beauty</h2>
+          <p data-txt="home0c30p">
+            Located near the Masukiye Waterfall and on the banks of the
+            beautiful Sapanca Lake, our resort offers breathtaking views and a
+            myriad of outdoor activities. Lake Park Resort is your ideal
+            destination.
+          </p>
+          <div class="button call-to-action">
+            <a href="#book" data-txt="home0c30b">Reach Us</a>
+          </div>
+        </section>
+        <section class="container plain-container">
+          <h2 data-txt="home0c40h">A Memorable Stay Awaits</h2>
+          <p data-txt="home0c40p">
+            At Lake Park Resort, we strive to provide our guests with a
+            memorable stay. With our top-notch facilities, exceptional service,
+            and stunning location, we promise a getaway that you’ll cherish for
+            a lifetime.
+            <br />Book your stay with us today and experience the best of
+            Sapanca Sakarya.
+          </p>
+          <div class="button call-to-action">
+            <a href="#book" data-txt="home0c40b">Reserve Today</a>
+          </div>
+        </section>
+      </div>
+      <div id="book">
+        <div id="video-container">
+          <video id="video" autoplay loop muted>
+            <source
+              src="https://res.cloudinary.com/dhhfikgdp/video/upload/v1715937669/videos/background_mjkukh.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <form method="get" id="search-bar-form">
+          <div id="search-bar-container">
+            <div>
+              <div id="search-bar">
+                <div id="start-date">
+                  <label for="check-in" data-txt="check0in">Check-In</label>
+                  <input type="date" name="check-in" id="check-in" required />
+                </div>
+                <div id="end-date">
+                  <label for="check-out" data-txt="check0out">Check-Out</label>
+                  <input type="date" name="check-out" id="check-out" required />
+                </div>
+                <div id="villas-number">
+                  <label for="villas" data-txt="villas0number"
+                    >Villas to Book</label
+                  >
+                  <input
+                    type="number"
+                    id="villas"
+                    name="villas"
+                    min="0"
+                    max="9"
+                  />
+                </div>
+                <button type="submit" id="search-icon">
+                  <img
+                    src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937770/icons/search_ol0kkk.png"
+                    alt="search icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="search-result">
+          <p data-txt="search0result0p1">
+            <strong>Great News!</strong> We have found
+            <span id="available-villas">3</span> available villas for your
+            stay!<br />
+            Your dream vacation is just a click away. Here's a quick overview of
+            the pricing and booking details:
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td data-txt="check0in">Check-In</td>
+                <td>20th of December, 2022</td>
+              </tr>
+              <tr>
+                <td data-txt="check0out">Check-Out</td>
+                <td>30th of December, 2022</td>
+              </tr>
+              <tr>
+                <td data-txt="total0days">Total Days</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td data-txt="villas0number">Number of Villas</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td data-txt="daily0price">Daily Price per Villa</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td data-txt="total0price">Total Price</td>
+                <td>$1600</td>
+              </tr>
+            </tbody>
+          </table>
+          <p data-txt="search0result0p2">
+            But wait, there’s more! We’re excited to offer you a
+            <span>special discount.</span> That’s a deal you don’t want to miss!
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td data-txt="discount0price">Total Price after Discount</td>
+                <td>900$</td>
+              </tr>
+            </tbody>
+          </table>
+          <p data-txt="search0result0p3">
+            Don’t wait too long, these villas won’t be available for long. Catch
+            this offer and fill out the booking form now to secure your dream
+            holiday stay. We’re looking forward to welcoming you!
+          </p>
+          <a href="https://wa.me/905374507515" target="_blank">
+            <button data-txt="search0result0b1">
+              Complete Your Booking Now
+            </button>
+          </a>
+        </div>
+      </div>
+      <div id="explore">
+        <section>
+          <article class="container plain-container">
+            <h2 data-txt="article10h">
+              Lake Park Resort –<br />
+              Your Serene Escape in Sapanca Sakarya
+            </h2>
+            <p data-txt="article10p">
+              <br />Nestled in the heart of Sapanca Sakarya, Lake Park Resort is
+              a hidden gem that offers an exclusive retreat from the hustle and
+              bustle of daily life. Our resort boasts 12 elegantly furnished
+              villas, each complete with its own
+              <strong>private swimming pool.</strong> Each villa is also
+              equipped with <strong>4 rooms and two showers</strong>, ensuring a
+              tranquil and intimate experience for all our guests.<br /><br />
+              <em>Luxury Meets Nature</em><br />
+              At Lake Park Resort, we believe in providing an experience that
+              combines the comfort of luxury with the serenity of nature. Our
+              villas are designed to blend seamlessly with the surrounding
+              landscape, offering breathtaking views and a peaceful environment.
+              Whether you’re looking to relax by the pool or explore the natural
+              beauty of Sapanca, our resort is the perfect base for all your
+              adventures.<br /><br />
+              <em>Amenities Tailored to Your Comfort</em><br />
+              Each villa at <abbr title="Lake Park Resort">LPR</abbr> is
+              equipped with modern amenities and services to cater to your every
+              need. From daily housekeeping to room service, we ensure that your
+              stay is as comfortable and hassle-free as possible. Our dedicated
+              staff is always on hand to provide personalized service, whether
+              it’s arranging a special dinner or guiding you to local
+              attractions.
+            </p>
+          </article>
+        </section>
+        <section>
+          <article class="container plain-container">
+            <h2 data-txt="article2h">Experience Sapanca Like Never Before</h2>
+            <p data-txt="article2p">
+              Lake Park Resort is ideally located near Sapanca Lake Park and
+              Ormanya Wildlife Park, offering guests the opportunity to immerse
+              themselves in the area’s natural splendor. Take a leisurely stroll
+              by the lake, or spend the day exploring the wildlife park – the
+              choice is yours.<br /><br />
+              <em>Your Home Away From Home</em><br />
+              We understand that privacy and comfort are paramount when you’re
+              on vacation. That’s why our villas are designed to offer you the
+              feel of a home away from home, with the added luxury of hotel-like
+              services. The daily rental system provides the flexibility to make
+              Lake Park Resort your own, even if it’s just for a day.<br /><br />
+              <em>Join Us for an Unforgettable Stay</em><br />
+              Lake Park Resort invites you to experience the ultimate in
+              relaxation and comfort. Book your villa today and discover why our
+              guests return year after year for their perfect getaway. We look
+              forward to welcoming you to your new favorite escape.
+            </p>
+          </article>
+        </section>
+        <div lang="en" dir="ltr" id="image-gallery">
+          <div id="main-photo">
+            <div id="swipe">
+              <div class="swipe left">
+                <img
+                  src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937767/icons/gallery/swipeL_rpbt5j.png"
+                  alt="swipe left"
+                />
+              </div>
+              <div class="swipe right">
+                <img
+                  src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937768/icons/gallery/swipeR_gb1yg6.png"
+                  alt="swipe left"
+                />
+              </div>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo2_ui9snp.jpg"
+              alt="photos of the resort"
+            />
+          </div>
+          <div id="progress-bar">
+            <div class="step"></div>
+            <div class="step current-step"></div>
+            <div class="step"></div>
+          </div>
+          <div id="other-imgs">
+            <div class="other-img-wrapper">
+              <div class="other-img" id="previous-img">
+                <img
+                  src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo1_pnavkp.jpg"
+                  alt="photos of the resort"
+                />
+              </div>
+              <button class="gallery-btn" id="btn-left">&laquo;</button>
+            </div>
+            <div class="other-img-wrapper">
+              <div class="other-img" id="current-img">
+                <img
+                  src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo2_ui9snp.jpg"
+                  alt="photos of the resort"
+                />
+              </div>
+            </div>
+            <div class="other-img-wrapper">
+              <div class="other-img" id="next-img">
+                <img
+                  src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo3_bmi1av.jpg"
+                  alt="photos of the resort"
+                />
+              </div>
+              <button class="gallery-btn" id="btn-right">&raquo;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reach">
+        <section>
+          <div class="parent-grid">
+            <div class="container plain-container" id="reach-container">
+              <h2 data-txt="reach0h1">Reach Us at Lake Park Resort</h2>
+              <p data-txt="reach0p1">
+                Lake Park Resort is your perfect getaway nestled in the heart of
+                nature. We’re conveniently located in Rüstempasa, Adiyaman Sk No
+                33/1, Sapanca, Sakarya, Turkey.
+              </p>
+              <h3 data-txt="reach0h22">By Car &#128663;</h3>
+              <p data-txt="reach0p2">
+                Our resort is well-connected by roads. You can use any popular
+                GPS service to navigate to our location. Just type in “Lake Park
+                Resort, Sapanca” and you’ll be on your way!
+              </p>
+              <h3 data-txt="reach0h23">By Train &#128646;</h3>
+              <p data-txt="reach0p3">
+                The nearest railway station is
+                <span
+                  ><a
+                    href="https://railturkey.org/travel/stations/arifiye/"
+                    target="_blank"
+                    >Arifiye</a
+                  ></span
+                >, which is just 6 km away from the resort. From there, you can
+                take a taxi or use local transportation services to reach us.
+              </p>
+              <h3 data-txt="reach0h24">By Air &#9992;</h3>
+              <p data-txt="reach0p4">
+                The closest airport is
+                <span
+                  ><a
+                    href="https://www.sabihagokcen.aero/passengers-and-visitors/transport-and-parking/transportation/easy-access-to-sakarya"
+                    target="_blank"
+                    >Sabiha Gökçen International Airport - SAW</a
+                  ></span
+                >. It’s about a 90-minute drive from the resort. Taxis and
+                shuttle services are available from the airport.
+              </p>
+              <h3 data-txt="reach0h25">Map &#128506;</h3>
+              <p data-txt="reach0p5">
+                To help you find us easily, we’ve included a map snippet below.
+                This will give you a visual understanding of our location and
+                the surrounding area.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="contact-form-container">
+          <form id="contact-form" action="#" method="post">
+            <h2 data-txt="form0h">Contact Form</h2>
+            <p data-txt="form0p">
+              If you have any questions or need assistance in planning your
+              journey, feel free to fill out the contact form below. Our team is
+              always here to help you!
+            </p>
+            <div class="firstname">
+              <label for="firstname" data-txt="form0l1"
+                ><abbr title="required">* </abbr>First Name</label
+              >
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Only letters and -"
+                required
+                minlength="3"
+                maxlength="30"
+                pattern="[A-Za-z\- ]{3,30}"
+              />
+            </div>
+            <div class="lastname">
+              <label for="lastname" data-txt="form0l2">Last Name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Only letters and -"
+                minlength="3"
+                maxlength="30"
+                pattern="[A-Za-z\- ]{3,30}"
+              />
+            </div>
+            <div class="email">
+              <label for="email" data-txt="form0l3"
+                ><abbr title="required">* </abbr>Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@xmail.com"
+                required
+              />
+            </div>
+            <div class="phone">
+              <label for="phone-number" data-txt="form0l4">Phone Number</label>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                placeholder="Only numbers, +, -"
+                pattern="[0-9\-+ ]{6,15}"
+              />
+            </div>
+            <div class="preferred">
+              <label data-txt="form0l5"
+                ><abbr title="required">* </abbr>Preferred Contact Method</label
+              >
+              <div>
+                <div>
+                  <input
+                    type="radio"
+                    id="p-email"
+                    name="preferred"
+                    value="email"
+                    required
+                  />
+                  <label for="p-email" data-txt="form0l6">Email</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="p-phone"
+                    name="preferred"
+                    value="phone"
+                  />
+                  <label for="p-phone" data-txt="form0l7">Phone</label>
+                </div>
+              </div>
+            </div>
+            <div class="subject">
+              <label for="subject" data-txt="form0l8">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Enter the subject, maximum of a 100 characters"
+                pattern=".{3,100}"
+              />
+            </div>
+            <div class="message">
+              <label for="message" data-txt="form0l9"
+                ><abbr title="required">* </abbr>Message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your message here"
+                required
+                rows="5"
+                minlength="10"
+                maxlength="5000"
+              ></textarea>
+            </div>
+            <div class="submit button">
+              <button type="submit" data-txt="form0b">Submit</button>
+            </div>
+          </form>
+        </section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4871.787716250545!2d4.8040442!3d52.3723446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaf05e0f6254f%3A0x61e652d204a9cdc8!2spark%20lake%20resort!5e0!3m2!1sen!2snl!4v1715724827802!5m2!1sen!2snl"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+    <footer class="bar" id="footer">
+      <div class="bar">
+        <div id="contact">
+          <address id="address">
+            <img
+              alt="address icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938098/icons/footer/1location_dlewye.png"
+            />
+            <a
+              lang="en"
+              dir="ltr"
+              href="https://maps.app.goo.gl/Cmrhqrokq8TGugCg6"
+            >
+              Rustempasa, Adiyaman Sk. No:33/1<br />
+              54600 Sapanca, Sakarya, Turkey
+            </a>
+          </address>
+          <div id="phone">
+            <img
+              alt="phone icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938100/icons/footer/2phone-receiver-silhouette_bc0fzw.png"
+            /><a lang="en" dir="ltr" href="tel:+905374507515"
+              >+90 537 450 7515</a
+            >
+          </div>
+        </div>
+        <div id="social-media">
+          <a href="https://www.instagram.com/lake._park/" target="_blank"
+            ><img
+              alt="instagram icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938101/icons/footer/3instagram_oduuvx.png"
+          /></a>
+          <a
+            href="https://www.facebook.com/people/Lake-park-sapanca/61555800183886/"
+            target="_blank"
+            ><img
+              alt="facebook icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938105/icons/footer/5facebook_ifrxq8.png"
+          /></a>
+          <a href="https://wa.me/905374507515" target="_blank"
+            ><img
+              alt="whatsapp icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938106/icons/footer/6whatsapp_eufwj2.png"
+          /></a>
+          <a href="lakeparkresort1@gmail.com" target="_blank"
+            ><img
+              alt="email icon"
+              src="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938107/icons/footer/7gmail_oj2tfz.png"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li class="button current">
+              <a href="#home" data-txt="home">Home</a>
+            </li>
+            <li class="button"><a href="#book" data-txt="book">Book</a></li>
+            <li class="button">
+              <a href="#explore" data-txt="explore">Explore</a>
+            </li>
+            <li class="button"><a href="#reach" data-txt="reach">Reach</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="notice">
+        <p data-txt="notice0p1">© 2025 LPR. All rights reserved.</p>
+        <p data-txt="notice0p2"></p>
+      </div>
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
