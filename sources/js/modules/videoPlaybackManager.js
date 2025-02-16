@@ -1,12 +1,10 @@
-import { checkVariables } from '../utils/checkVariables.js';
 //video - start:
 /*on off based on hover*/
 export const videoPlaybackManager = () => {
-  const video = document.getElementById('video');
-  const videoContainer = document.getElementById('video-container');
-  if (!checkVariables('videoOnOff', video, videoContainer)) return;
+  const video = document.getElementById("video");
+  const videoContainer = document.getElementById("video-container");
 
-  const scrollVideo = (event) => {
+  const scrollVideo = () => {
     const videoTop = videoContainer.offsetTop;
     const videoHeight = video.offsetHeight;
     const videoBottom = videoTop + videoHeight;
@@ -23,11 +21,11 @@ export const videoPlaybackManager = () => {
     }
   };
 
-  window.addEventListener('scroll', scrollVideo);
-  videoContainer.addEventListener('mouseleave', () => {
+  window.addEventListener("scroll", scrollVideo);
+  videoContainer.addEventListener("mouseleave", () => {
     video.pause();
   });
-  videoContainer.addEventListener('mouseenter', () => {
+  videoContainer.addEventListener("mouseenter", () => {
     video.play();
   });
 };
