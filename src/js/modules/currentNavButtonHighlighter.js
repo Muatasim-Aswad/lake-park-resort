@@ -1,12 +1,9 @@
-import { checkVariables } from '../utils/checkVariables.js';
-
 //current nav button - start:
 export const currentNavButtonHighlighter = () => {
-  const pageSections = document.querySelectorAll('main > div'); // ERROR CHANGED TO div from section based on w3 html validation warning
-  const navButtons = document.querySelectorAll('nav li');
-  checkVariables('current navigation button', pageSections, navButtons);
+  const pageSections = document.querySelectorAll("main > div"); // ERROR CHANGED TO div from section based on w3 html validation warning
+  const navButtons = document.querySelectorAll("nav li");
 
-  const changeCurrent = (event) => {
+  const changeCurrent = () => {
     const viewLocation = window.scrollY;
     //runs the code for every section
     pageSections.forEach((section, index) => {
@@ -17,25 +14,25 @@ export const currentNavButtonHighlighter = () => {
           ? sectionTop + section.offsetHeight
           : sectionTop +
             section.offsetHeight +
-            document.getElementById('home-rest').offsetHeight;
+            document.getElementById("home-rest").offsetHeight;
 
       //if the section is in view, it removes 'current' class from every button and the add it to the one that matches the section
       if (viewLocation > sectionTop && viewLocation < sectionBottom) {
         navButtons.forEach((button) => {
-          button.classList.remove('current');
+          button.classList.remove("current");
 
           const buttonHref = button.firstElementChild
-            .getAttribute('href')
-            .replace('#', '');
+            .getAttribute("href")
+            .replace("#", "");
 
           if (section.id === buttonHref) {
-            button.classList.add('current');
+            button.classList.add("current");
           }
         });
       }
     });
   };
-  window.addEventListener('scroll', changeCurrent);
-  window.addEventListener('hashchange', changeCurrent);
+  window.addEventListener("scroll", changeCurrent);
+  window.addEventListener("hashchange", changeCurrent);
 };
 /*end - current nav button*/

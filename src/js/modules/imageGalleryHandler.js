@@ -1,18 +1,17 @@
-import { checkVariables } from '../utils/checkVariables.js';
 //image gallery - start:
 /*changes images in 2 directions based on click & swipe(mouse - touch) -- hides swipe instructions once used -- progress bar*/
 export const imageGalleryHandler = () => {
   const photos = [
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo1_pnavkp.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo2_ui9snp.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo3_bmi1av.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo4_vhycto.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo5_r6xyym.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo6_px6qvn.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo7_kn0arj.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937575/images/gallery/photo8_yuqqhq.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937576/images/gallery/photo9_fdo4hu.jpg',
-    'https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo10_oarmrt.jpg',
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo1_pnavkp.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo2_ui9snp.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo3_bmi1av.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo4_vhycto.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo5_r6xyym.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo6_px6qvn.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937573/images/gallery/photo7_kn0arj.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937575/images/gallery/photo8_yuqqhq.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937576/images/gallery/photo9_fdo4hu.jpg",
+    "https://res.cloudinary.com/dhhfikgdp/image/upload/v1715937572/images/gallery/photo10_oarmrt.jpg",
   ];
 
   let currentIndex = 1; //donates to the currently in display img index in photos array
@@ -20,46 +19,25 @@ export const imageGalleryHandler = () => {
     currentIndex === 0 ? photos.length - 1 : currentIndex - 1; //previous index
   let nextIndex = () =>
     currentIndex === photos.length - 1 ? 0 : currentIndex + 1; //next index
-  let direction = 'next'; // "next" or "left". next: to right, forward. previous: to left, backward.
+  let direction = "next"; // "next" or "left". next: to right, forward. previous: to left, backward.
 
-  const bigImg = document.querySelector('#main-photo > img');
-  const previousImg = document.querySelector('#previous-img > img');
-  const currentImg = document.querySelector('#current-img > img');
-  const nextImg = document.getElementById('next-img').firstElementChild;
+  const bigImg = document.querySelector("#main-photo > img");
+  const previousImg = document.querySelector("#previous-img > img");
+  const currentImg = document.querySelector("#current-img > img");
+  const nextImg = document.getElementById("next-img").firstElementChild;
 
-  const swipeIcon = document.getElementById('swipe').style;
-  const previousBtn = document.getElementById('btn-left');
-  const nextBtn = document.getElementById('btn-right');
-  const progressBar = document.getElementById('progress-bar');
+  const swipeIcon = document.getElementById("swipe").style;
+  const previousBtn = document.getElementById("btn-left");
+  const nextBtn = document.getElementById("btn-right");
+  const progressBar = document.getElementById("progress-bar");
   const steps = progressBar.children;
-
-  if (
-    !checkVariables(
-      'imageGallery',
-      photos,
-      currentIndex,
-      previousIndex,
-      nextIndex,
-      direction,
-      bigImg,
-      previousImg,
-      currentImg,
-      nextImg,
-      swipeIcon,
-      previousBtn,
-      nextBtn,
-      progressBar,
-      steps,
-    )
-  )
-    return;
 
   const updateGallery = (event) => {
     //to create blocks in progressBar as much as the elements of photos array
     const rebuildProgressBar = () => {
       const stepsFactory = () => {
-        let step = document.createElement('div');
-        step.classList.add('step');
+        let step = document.createElement("div");
+        step.classList.add("step");
         progressBar.appendChild(step);
       };
 
@@ -76,15 +54,15 @@ export const imageGalleryHandler = () => {
     //decides if the flow of change forward or backward
     const stateDirection = (event) => {
       if (swipePrevious || (event && event.target.contains(previousBtn))) {
-        direction = 'previous';
+        direction = "previous";
       } else {
-        direction = 'next';
+        direction = "next";
       }
     };
 
     //which photo to display now?
     const changeCurrentIndex = () => {
-      if (direction === 'next')
+      if (direction === "next")
         currentIndex =
           currentIndex === photos.length - 1 ? 0 : currentIndex + 1;
       else
@@ -94,19 +72,19 @@ export const imageGalleryHandler = () => {
 
     const updateImgs = () => {
       const assignImg = (destination, link) => {
-        destination.style.opacity = '0.4';
+        destination.style.opacity = "0.4";
         destination.src = link;
         if (destination !== bigImg) {
           destination.parentElement.style.animation =
-            direction === 'next'
-              ? 'slide-left 0.7s ease-in-out'
-              : 'slide-right 0.7s ease-in-out';
+            direction === "next"
+              ? "slide-left 0.7s ease-in-out"
+              : "slide-right 0.7s ease-in-out";
         }
         setTimeout(() => {
-          destination.style.opacity = '1';
+          destination.style.opacity = "1";
 
           if (destination !== bigImg)
-            destination.parentElement.style.animation = '';
+            destination.parentElement.style.animation = "";
         }, 700);
       };
 
@@ -117,15 +95,15 @@ export const imageGalleryHandler = () => {
     };
 
     const updateProgressBar = () => {
-      steps[previousIndex()].classList.remove('current-step');
-      steps[nextIndex()].classList.remove('current-step');
-      steps[currentIndex].classList.add('current-step');
+      steps[previousIndex()].classList.remove("current-step");
+      steps[nextIndex()].classList.remove("current-step");
+      steps[currentIndex].classList.add("current-step");
     };
 
-    if (event && event.type === 'load') {
+    if (event && event.type === "load") {
       updateImgs();
       rebuildProgressBar();
-      removeEventListener('load', updateGallery);
+      removeEventListener("load", updateGallery);
       return;
     }
 
@@ -138,12 +116,13 @@ export const imageGalleryHandler = () => {
 
     autoUpdate = setInterval(updateGallery, 5000);
 
-    if (event && swipeIcon.display !== 'none') swipeIcon.display = 'none';
+    if (event && swipeIcon.display !== "none") swipeIcon.display = "none";
   };
 
   let swipePrevious = false; //true: the user swiped right, previous. false: swiped left, next
 
-  const swipe = (() => {
+  //swipe functionality
+  (() => {
     let swipeStartX = 0;
     let swipeEndX = 0;
     let swipeStartY = 0;
@@ -153,7 +132,7 @@ export const imageGalleryHandler = () => {
     const registerClick = (event) => {
       event.preventDefault();
 
-      if (event.type.includes('down')) {
+      if (event.type.includes("down")) {
         swipeStartX = event.screenX;
         swipeStartY = event.screenY;
       } else {
@@ -164,7 +143,7 @@ export const imageGalleryHandler = () => {
 
     //register the coordinations of touch start and end
     const registerTouch = (event) => {
-      if (event.type.includes('start')) {
+      if (event.type.includes("start")) {
         swipeStartX = event.changedTouches[0].screenX;
         swipeStartY = event.changedTouches[0].screenY;
       } else {
@@ -183,25 +162,25 @@ export const imageGalleryHandler = () => {
         swipePrevious = swipeX > 0 ? true : false;
         updateGallery();
         swipePrevious = false; //to keep the auto behavior as next: see stateDirection
-        if (swipeIcon.display !== 'none') swipeIcon.display = 'none';
+        if (swipeIcon.display !== "none") swipeIcon.display = "none";
       }
     };
 
-    bigImg.parentElement.addEventListener('touchstart', registerTouch, {
+    bigImg.parentElement.addEventListener("touchstart", registerTouch, {
       passive: true,
     });
-    bigImg.parentElement.addEventListener('touchend', registerTouch, {
+    bigImg.parentElement.addEventListener("touchend", registerTouch, {
       passive: true,
     });
-    bigImg.parentElement.addEventListener('touchend', isSwiped);
-    bigImg.parentElement.addEventListener('mousedown', registerClick);
-    bigImg.parentElement.addEventListener('mouseup', registerClick);
-    bigImg.parentElement.addEventListener('mouseup', isSwiped);
+    bigImg.parentElement.addEventListener("touchend", isSwiped);
+    bigImg.parentElement.addEventListener("mousedown", registerClick);
+    bigImg.parentElement.addEventListener("mouseup", registerClick);
+    bigImg.parentElement.addEventListener("mouseup", isSwiped);
   })();
 
-  window.addEventListener('load', updateGallery);
+  window.addEventListener("load", updateGallery);
   let autoUpdate = setInterval(updateGallery, 5000);
-  previousBtn.addEventListener('click', updateGallery);
-  nextBtn.addEventListener('click', updateGallery);
+  previousBtn.addEventListener("click", updateGallery);
+  nextBtn.addEventListener("click", updateGallery);
 };
 /*end - image gallery*/
