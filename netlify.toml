@@ -1,2 +1,5 @@
 [build]
   publish = "client"
+
+[functions]
+  directory = "functions/"
