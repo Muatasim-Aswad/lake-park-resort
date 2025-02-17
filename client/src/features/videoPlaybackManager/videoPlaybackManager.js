@@ -1,16 +1,20 @@
-//video - start:
-/*on off based on hover*/
+//play pause based on window view location
+//play pause based on mouse location
 export const videoPlaybackManager = () => {
   const video = document.getElementById("video");
   const videoContainer = document.getElementById("video-container");
 
-  const scrollVideo = () => {
+  window.addEventListener("scroll", playVideoOnView);
+  videoContainer.addEventListener("mouseenter", () => video.play());
+  videoContainer.addEventListener("mouseleave", () => video.pause());
+
+  function playVideoOnView() {
     const videoTop = videoContainer.offsetTop;
     const videoHeight = video.offsetHeight;
     const videoBottom = videoTop + videoHeight;
     const viewLocation = window.scrollY;
 
-    video.pause(); //ERROR move up
+    video.pause();
     if (
       viewLocation + 0.7 * videoHeight > videoTop &&
       viewLocation + 0.4 * videoHeight < videoBottom
@@ -19,14 +23,5 @@ export const videoPlaybackManager = () => {
     } else {
       video.pause();
     }
-  };
-
-  window.addEventListener("scroll", scrollVideo);
-  videoContainer.addEventListener("mouseleave", () => {
-    video.pause();
-  });
-  videoContainer.addEventListener("mouseenter", () => {
-    video.play();
-  });
+  }
 };
-/*end - video*/

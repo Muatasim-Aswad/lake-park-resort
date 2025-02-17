@@ -45,7 +45,6 @@ export const bookingSearchHandler = () => {
     };
 
     //set the date picker to today or later, earlier not allowed
-
     const setMinDate = () => {
       const today = new Date();
       const year = today.getFullYear();
@@ -108,6 +107,21 @@ export const bookingSearchHandler = () => {
       }, 500);
     }
   };
-  searchForm.addEventListener("submit", searchBooking);
+
+  //temporary handler until the backend is ready
+  const forwardToURL = (event) => {
+    event.preventDefault();
+    const baseURL = "https://wa.me/905374507515";
+    const checkIn = checkInDate.value;
+    const checkOut = checkOutDate.value;
+    const villas = numberOfVillas.value;
+    const text = encodeURI(
+      `Hello, I would like to book ${villas} villas from ${checkIn} to ${checkOut}`,
+    );
+
+    const url = `${baseURL}?text=${text}`;
+    window.open(url, "_blank");
+  };
+  searchForm.addEventListener("submit", forwardToURL);
 };
 /*end - booking- search bar*/

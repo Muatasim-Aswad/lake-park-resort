@@ -57,6 +57,10 @@
   z-index: 1;
 }
 
+#villas {
+  width: 2rem;
+}
+
 #search-bar div + div {
   padding-left: 2vw;
 }
@@ -84,9 +88,12 @@
 
 #search-icon {
   background-color: transparent;
+  display: flex;
 }
 
 #search-icon > img {
+  align-items: center;
+  justify-content: center;
   height: 25px;
   width: auto;
 }

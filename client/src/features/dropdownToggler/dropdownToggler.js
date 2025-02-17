@@ -1,15 +1,16 @@
-import { headerManipulate } from "./headerManipulate.js";
+import { adaptHeader } from "../headerAdapter/headerAdapter.js";
 
-//dropdown menu - start:
-/*display based on click*/
-export const dropdownToggle = () => {
+//dropdown nav menu
+export const dropdownToggler = () => {
   const hamburgerButton = document.getElementById("hamburger-button");
   const closeButton = document.getElementById("close-button");
   const dropdownContainer = document.getElementById("dropdown-container");
   const overlay = document.getElementById("overlay");
   const header = document.getElementById("header");
 
-  const showDropdown = (event) => {
+  hamburgerButton.addEventListener("click", showDropdown);
+
+  function showDropdown(event) {
     event.stopPropagation();
 
     hamburgerButton.classList.add("hide");
@@ -18,10 +19,14 @@ export const dropdownToggle = () => {
     overlay.classList.toggle("show");
     header.classList.add("primary-color");
 
-    window.removeEventListener("scroll", headerManipulate);
-  };
+    window.removeEventListener("scroll", adaptHeader);
 
-  const closeDropdown = (event) => {
+    window.addEventListener("click", closeDropdown);
+    window.addEventListener("resize", closeDropdown);
+    window.addEventListener("hashchange", closeDropdown);
+  }
+
+  function closeDropdown(event) {
     if (
       dropdownContainer.classList.contains("show") &&
       (event.type === "resize" ||
@@ -34,14 +39,8 @@ export const dropdownToggle = () => {
       overlay.classList.toggle("show");
       header.classList.remove("primary-color");
 
-      window.addEventListener("scroll", headerManipulate);
-      headerManipulate();
+      adaptHeader();
+      window.addEventListener("scroll", adaptHeader);
     }
-  };
-
-  hamburgerButton.addEventListener("click", showDropdown);
-  window.addEventListener("click", closeDropdown);
-  window.addEventListener("resize", closeDropdown);
-  window.addEventListener("hashchange", closeDropdown);
+  }
 };
-/*end - dropdown menu */

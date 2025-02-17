@@ -88,9 +88,6 @@
 #footer .button.current a {
   pointer-events: none;
   border: none;
-  border-radius: 0;
-  margin: 8px;
-  padding: 2px;
   color: var(--primary-contrast-color);
   opacity: 0.7;
 }
@@ -100,8 +97,10 @@
 #footer.button.current a:hover,
 #footer.button.current a:focus {
   pointer-events: none;
-  margin: 8px;
-  padding: 2px;
+  padding: 7px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 0;
   background-color: transparent;
 }
 
