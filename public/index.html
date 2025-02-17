@@ -9,16 +9,16 @@
       href="https://res.cloudinary.com/dhhfikgdp/image/upload/v1715938355/icons/favicon_a4dxtr.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="./src/css/general.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/language.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/util.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/book.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/explore.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/reach.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/general.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/language.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/util.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/book.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/explore.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/reach.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,8 +50,9 @@
         </nav>
         <div id="display-language">
           <ul>
-            <li class="button current"><a href="#" lang="en">En</a></li>
-            <li class="button">
+            <li id="en" class="button current"><a href="#" lang="en">En</a></li>
+            <li id="tr" class="button"><a href="#" lang="en">Tr</a></li>
+            <li id="ar" class="button">
               <a lang="ar" href="#">عربي</a>
             </li>
           </ul>
@@ -415,7 +416,13 @@
           </div>
         </section>
         <section id="contact-form-container">
-          <form id="contact-form" action="#" method="post">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify
+            id="contact-form"
+          >
             <h2 data-txt="form0h">Contact Form</h2>
             <p data-txt="form0p">
               If you have any questions or need assistance in planning your
@@ -602,6 +609,6 @@
         <p data-txt="notice0p2"></p>
       </div>
     </footer>
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="../src/main.js"></script>
   </body>
 </html>
