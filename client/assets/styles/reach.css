@@ -141,14 +141,16 @@ iframe {
 #contact-form input,
 #contact-form textarea {
   background-color: #70a6a7;
-  padding: 0 0.5rem;
+  padding: 0.15rem 0.5rem;
   margin: 0;
   width: 100%;
+  border-radius: 5px;
+  border: 1.5px none #264646;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  border: 2px dashed black;
+  border-style: dashed;
 }
 
 #contact-form abbr {

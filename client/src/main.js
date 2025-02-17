@@ -1,17 +1,17 @@
-import { attachHeaderHandlers } from "./features/modules/headerManipulate.js";
-import { currentNavButtonHighlighter } from "./features/modules/currentNavButtonHighlighter.js";
-import { dropdownToggle } from "./features/modules/dropdownToggle.js";
-import { videoPlaybackManager } from "./features/modules/videoPlaybackManager.js";
-import { bookingSearchHandler } from "./features/modules/bookingSearchHandler.js";
-import { imageGalleryHandler } from "./features/modules/imageGalleryHandler.js";
+import { headerAdapter } from "./features/headerAdapter/headerAdapter.js";
+import { currentNavButtonHighlighter } from "./features/currentNavButtonHighlighter/currentNavButtonHighlighter.js";
+import { dropdownToggler } from "./features/dropdownToggler/dropdownToggler.js";
+import { videoPlaybackManager } from "./features/videoPlaybackManager/videoPlaybackManager.js";
+import { bookingSearchHandler } from "./features/bookingSearchHandler/bookingSearchHandler.js";
+import { imageGalleryHandler } from "./features/imageGalleryHandler/imageGalleryHandler.js";
 import { translations } from "./features/translations/translations.js";
 
 document.addEventListener("DOMContentLoaded", main);
 
 function main() {
-  attachHeaderHandlers();
+  headerAdapter();
   currentNavButtonHighlighter();
-  dropdownToggle();
+  dropdownToggler();
   videoPlaybackManager();
   bookingSearchHandler();
   imageGalleryHandler();

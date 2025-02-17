@@ -1,6 +1,6 @@
 //header - start:
 /*style & display header based on its position relative to the whole page*/
-export const headerManipulate = () => {
+export const adaptHeader = () => {
   const header = document.getElementById("header");
   const footer = document.querySelector("#footer");
   const logo = document.getElementById("logo");
@@ -37,9 +37,9 @@ export const headerManipulate = () => {
   }
 };
 
-export const attachHeaderHandlers = () => {
-  window.addEventListener("scroll", headerManipulate);
-  window.addEventListener("resize", headerManipulate);
-  window.addEventListener("load", headerManipulate);
+export const headerAdapter = () => {
+  window.addEventListener("scroll", adaptHeader);
+  window.addEventListener("resize", adaptHeader);
+  window.addEventListener("load", adaptHeader);
 };
 /*end - header*/

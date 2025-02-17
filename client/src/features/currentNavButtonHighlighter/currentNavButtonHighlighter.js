@@ -7,7 +7,7 @@ export const currentNavButtonHighlighter = () => {
     const viewLocation = window.scrollY;
     //runs the code for every section
     pageSections.forEach((section, index) => {
-      if (index === 1 || index === 2) return; //ERROR was not added
+      if (index === 1 || index === 2) return;
       const sectionTop = section.offsetTop - 10; // the number for header height
       const sectionBottom =
         index > 0 //the first section is in 2 containers
@@ -27,6 +27,7 @@ export const currentNavButtonHighlighter = () => {
 
           if (section.id === buttonHref) {
             button.classList.add("current");
+            history.replaceState(null, null, `#${section.id}`);
           }
         });
       }
@@ -35,4 +36,3 @@ export const currentNavButtonHighlighter = () => {
   window.addEventListener("scroll", changeCurrent);
   window.addEventListener("hashchange", changeCurrent);
 };
-/*end - current nav button*/
