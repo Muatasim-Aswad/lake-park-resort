@@ -32,6 +32,7 @@
       "prettier --write"
     ],
     "*.json": [
+      "eslint --fix",
       "prettier --write"
     ]
   },
