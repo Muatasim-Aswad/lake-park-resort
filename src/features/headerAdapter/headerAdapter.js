@@ -7,6 +7,7 @@ export const adaptHeader = () => {
   const firstContainerH1 =
     document.querySelector(".container:first-of-type>h1") ||
     document.querySelector("main").children[1];
+
   const windowHeight = window.innerHeight;
   const scrollPosition = window.scrollY;
   const heading1stPosition = firstContainerH1.offsetTop;
