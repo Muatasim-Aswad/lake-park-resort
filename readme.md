@@ -32,11 +32,11 @@ A fully responsive, interactive **multilingual static website** designed with be
 
 ## 🚀 Features
 
-- Image gallery with smooth interactions  
-- Search functionality (planned integration with the client’s reservation system)  
-- Contact form  
-- Multilingual support: **English (En), Arabic (Ar), Turkish (Tr)**  
-   - If the user has not manually selected a language before, it defaults to the browser's language.
+- Image gallery with smooth interactions
+- Search functionality (planned integration with the client’s reservation system)
+- Contact form
+- Multilingual support: **English (En), Arabic (Ar), Turkish (Tr)**
+  - If the user has not manually selected a language before, it defaults to the browser's language.
 
 This project provided hands-on experience in the **full software development lifecycle**—from UI/UX design to development and deployment.
 
@@ -44,18 +44,18 @@ This project provided hands-on experience in the **full software development lif
 
 ## 🛠 Tech Stack
 
-- **Languages:** HTML, CSS, JavaScript  
-- **Build Tool:** Vite  
-- **CI/CD:** Git, GitHub, Netlify (Husky, GitHub Actions) 
-- **Backend Logic:** Netlify Serverless Functions  
-- **Hosting:** Netlify (Website), Cloudinary (Media Storage)  
+- **Languages:** HTML, CSS, JavaScript
+- **Build Tool:** Vite
+- **CI/CD:** Git, GitHub, Netlify (Husky, GitHub Actions)
+- **Backend Logic:** Netlify Serverless Functions
+- **Hosting:** Netlify (Website), Cloudinary (Media Storage)
 
 ---
 
 ## 📂 File Structure
 
 ```
-index.html 
+index.html
 src
 ├── features
 │   ├── bookingSearchHandler
@@ -97,21 +97,26 @@ src
 ## 🔧 Installation & Setup
 
 1️⃣ **Clone the repository**
+
 ```sh
 git clone https://github.com/Muatasim-Aswad/lake-park-resort.git
 cd lake-park-resort
 ```
 
 2️⃣ **Install dependencies**
+
 ```sh
 npm install
 ```
 
 3️⃣ **Start the development server**
+
 ```sh
 npm run dev
 ```
+
 or
+
 ```sh
 netlify dev
 ```

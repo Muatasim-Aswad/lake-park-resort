@@ -159,7 +159,8 @@ iframe {
   text-decoration: none;
 }
 
-#contact-form label {
+#contact-form label,
+#contact-form legend {
   font-size: var(--smaller-font-size);
 }
 
