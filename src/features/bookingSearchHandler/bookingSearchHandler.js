@@ -75,7 +75,7 @@ function setMinDate(checkInDate, checkOutDate) {
 // Handle booking search
 // after connecting the client api to the serverless function
 // the endpoint is .netlify/functions/bookingSearchHandler
-function handleBookingSearch(event, checkInDate, checkOutDate, numberOfVillas) {
+/*function handleBookingSearch(event, checkInDate, checkOutDate, numberOfVillas) {
   event.preventDefault();
 
   const isDatesValid = validateDates(checkInDate, checkOutDate);
@@ -118,7 +118,7 @@ function handleBookingSearch(event, checkInDate, checkOutDate, numberOfVillas) {
       searchResult.style.display = "grid";
     }, 500);
   }
-}
+}*/
 
 // Forward to URL
 function forwardToURL(event, checkInDate, checkOutDate, numberOfVillas) {

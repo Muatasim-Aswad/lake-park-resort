@@ -1,4 +1,4 @@
-export async function handler(event, context) {
+export async function handler(event) {
   //get request query parameters
   const { start, end, number } = event.queryStringParameters;
 
