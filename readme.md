@@ -1,11 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f3adbe29-2bb2-4ce9-beb7-7be365cdb23a/deploy-status)](https://app.netlify.com/sites/lake-park/deploys)
-
-![HTML](https://img.shields.io/badge/HTML-FF5722?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-007ACC?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-purple)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![CSS3](https://img.shields.io/badge/CSS-3-blue)
+![HTML5](https://img.shields.io/badge/HTML-5-orange)
 
 # Lakepark Resort Website
 
@@ -32,17 +29,25 @@ A fully responsive, interactive **multilingual static website** designed with be
 
 ## 🚀 Features
 
-- Image gallery with smooth interactions
-- Search functionality (planned integration with the client’s reservation system)
-- Contact form
 - Multilingual support: **English (En), Arabic (Ar), Turkish (Tr)**
   - If the user has not manually selected a language before, it defaults to the browser's language.
+- Image gallery with smooth interactions.
+- Search functionality for booking, currently links to the resort WhatsApp. Once possible it will be connected with the reservation system.
+- Contact form that is sent to the resort email.
+- Adaptive header.
+- Up button.
 
 This project provided hands-on experience in the **full software development lifecycle**—from UI/UX design to development and deployment.
 
 ---
 
 ## 🛠 Tech Stack
+![HTML](https://img.shields.io/badge/HTML-FF5722?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-007ACC?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 
 - **Languages:** HTML, CSS, JavaScript
 - **Build Tool:** Vite
