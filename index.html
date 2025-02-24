@@ -419,6 +419,7 @@
             method="POST"
             data-netlify="true"
             id="contact-form"
+            autocomplete="on"
           >
             <h2 data-txt="form0h">Contact Form</h2>
             <p data-txt="form0p">
@@ -439,6 +440,7 @@
                 minlength="3"
                 maxlength="30"
                 pattern="[A-Za-z\- ]{3,30}"
+                autocomplete="given-name"
               />
             </div>
             <div class="lastname">
@@ -451,6 +453,7 @@
                 minlength="3"
                 maxlength="30"
                 pattern="[A-Za-z\- ]{3,30}"
+                autocomplete="family-name"
               />
             </div>
             <div class="email">
@@ -463,6 +466,7 @@
                 id="email"
                 placeholder="example@xmail.com"
                 required
+                autocomplete="email"
               />
             </div>
             <div class="phone">
@@ -473,6 +477,7 @@
                 id="phone-number"
                 placeholder="Only numbers, +, -"
                 pattern="[0-9\-+ ]{6,15}"
+                autocomplete="tel"
               />
             </div>
             <fieldset class="preferred">
@@ -509,6 +514,7 @@
                 id="subject"
                 placeholder="Enter the subject, maximum of a 100 characters"
                 pattern=".{3,100}"
+                autocomplete="off"
               />
             </div>
             <div class="message">
@@ -523,6 +529,7 @@
                 rows="5"
                 minlength="10"
                 maxlength="5000"
+                autocomplete="off"
               ></textarea>
             </div>
             <div class="submit button">
@@ -530,6 +537,7 @@
             </div>
           </form>
         </section>
+
         <iframe
           title="Map showing the location of Lake Park Resort"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4871.787716250545!2d4.8040442!3d52.3723446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaf05e0f6254f%3A0x61e652d204a9cdc8!2spark%20lake%20resort!5e0!3m2!1sen!2snl!4v1715724827802!5m2!1sen!2snl"
