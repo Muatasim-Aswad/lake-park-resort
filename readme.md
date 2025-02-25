@@ -14,7 +14,6 @@ A fully responsive, interactive **multilingual static website** designed with be
 
 ---
 
-* [📚 Table of Contents](#lakepark-resort-website)
    * [🚀 Features](#-features)
    * [🛠 Tech Stack](#-tech-stack)
    * [📂 File Structure](#-file-structure)
