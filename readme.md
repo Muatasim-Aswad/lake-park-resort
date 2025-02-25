@@ -14,16 +14,15 @@ A fully responsive, interactive **multilingual static website** designed with be
 
 ---
 
-## 📚 Table of Contents
-
-- [🚀 Features](#-features)
-- [🛠 Tech Stack](#-tech-stack)
-- [📂 File Structure](#-file-structure)
-- [🔧 Installation & Setup](#-installation--setup)
-- [📜 Scripts](#-scripts)
-- [📷 Screenshots](#-screenshots)
-- [🐛 Issues & Feedback](#-issues--feedback)
-- [📜 License](#-license)
+* [Lakepark Resort Website](#lakepark-resort-website)
+   * [🚀 Features](#-features)
+   * [🛠 Tech Stack](#-tech-stack)
+   * [📂 File Structure](#-file-structure)
+   * [🔧 Installation &amp; Setup](#-installation--setup)
+   * [📜 Scripts](#-scripts)
+   * [📷 Screenshots](#-screenshots)
+   * [🐛 Issues &amp; Feedback](#-issues--feedback)
+   * [📜 License](#-license)
 
 ---
 
