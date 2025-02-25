@@ -30,7 +30,7 @@ A fully responsive, interactive **multilingual static website** designed with be
 ## 🚀 Features
 
 - Multilingual support: **English (En), Arabic (Ar), Turkish (Tr)**
-  - If the user has not manually selected a language before, it defaults to the browser's language.
+  - If the user has not manually selected a language yet, it defaults to the browser's language.
 - Image gallery with smooth interactions.
 - Search functionality for booking, currently links to the resort WhatsApp. Once possible it will be connected with the reservation system.
 - Contact form that is sent to the resort email.
