@@ -14,3 +14,21 @@
   for = "/*"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
+
+[[redirects]]
+  from = "http://lakeparksapanca.com/*"
+  to = "https://lakeparksapanca.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.lakeparksapanca.com/*"
+  to = "https://lakeparksapanca.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.lakeparksapanca.com/*"
+  to = "https://lakeparksapanca.com/"
+  status = 301
+  force = true
