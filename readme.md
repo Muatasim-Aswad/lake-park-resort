@@ -14,14 +14,14 @@ A fully responsive, interactive **multilingual static website** designed with be
 
 ---
 
-   * [🚀 Features](#-features)
-   * [🛠 Tech Stack](#-tech-stack)
-   * [📂 File Structure](#-file-structure)
-   * [🔧 Installation &amp; Setup](#-installation--setup)
-   * [📜 Scripts](#-scripts)
-   * [📷 Screenshots](#-screenshots)
-   * [🐛 Issues &amp; Feedback](#-issues--feedback)
-   * [📜 License](#-license)
+- [🚀 Features](#-features)
+- [🛠 Tech Stack](#-tech-stack)
+- [📂 File Structure](#-file-structure)
+- [🔧 Installation &amp; Setup](#-installation--setup)
+- [📜 Scripts](#-scripts)
+- [📷 Screenshots](#-screenshots)
+- [🐛 Issues &amp; Feedback](#-issues--feedback)
+- [📜 License](#-license)
 
 ---
 
@@ -40,6 +40,7 @@ This project provided hands-on experience in the **full software development lif
 ---
 
 ## 🛠 Tech Stack
+
 ![HTML](https://img.shields.io/badge/HTML-FF5722?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-007ACC?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
